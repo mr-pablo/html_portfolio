@@ -1,26 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@1,100&family=Ephesis&display=swap');
 
-html,
-body {
+html,body {
     height: 100%;
     width: 100%;
     margin: 0;
     padding: 0;
     font-family: 'Barlow Condensed', sans-serif;
+    /* position: relative; */
 }
 
 * {
     box-sizing: border-box;
 }
 
-nav {
+nav{
     width: 100%;
     height: 8%;
     background-color: #212529;
     display: flex;
     align-items: center;
-    position: sticky;
+    position: fixed  ;
     top: 0;
+    z-index: 2;
 }
 
 .left_nav {
@@ -54,11 +55,16 @@ a:hover {
 
 .home {
     width: 100%;
-    padding: 60px;
-    height: 92%;
-    background-image: url(pexels-johannes-plenio-1103970.jpg);
+    padding-top: 6%;
+    padding-bottom:7px ;
+    height: 100%;
+    /* background-image: url(pexels-johannes-plenio-1103970.jpg); */
+    background-color: rgb(233, 233, 233);
     background-size: cover;
     display: flex;
+    align-items: center;
+   /* margin-bottom: 8%; */
+
 }
 
 .home_left {
@@ -74,9 +80,7 @@ a:hover {
     height: 100%;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    gap: -50px;
+    align-items: flex-start; 
     font-weight: bolder;
     line-height: 0;
     font-size: 20px;
@@ -86,4 +90,91 @@ a:hover {
     width: 600px;
     height: 650px;
     border-radius: 10% 25%;
+}
+
+/* ______________________________________________________________ */
+
+.services_container{
+    width: 100%;
+    height: 900px;
+    /* padding-top: 50px; */
+}
+
+.services_head{
+    width: 100%;
+    height: 10%;
+    background-color: rgb(233, 233, 233);
+    font-size: 50px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.services_body{
+    width: 100%;
+    height: 90%;
+    background-color: rgb(233, 233, 233);
+    display: flex;
+    gap: 20px;
+    padding:20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.services_card1{
+    height: 85%;
+    background-color: white;    
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 30px;
+    padding: 10px;
+    border-radius: 30px;
+    overflow: hidden;
+    
+}
+.services_card2{
+    height: 85%;
+    background-color: white;    
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 30px;
+    padding: 10px;
+    border-radius: 30px;
+}
+.services_card3{
+    height: 85%;
+    background-color: white;    
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 30px;
+    padding: 10px;
+    border-radius: 30px;
+}
+.card1_img{
+    height: 100%;
+    width: 100% ;
+    object-fit:     fill;
+    padding: 10px;
+    transition: all 500ms;
+}
+.card1_img:hover{
+    transform: scale(1.1);
+}
+.image_div{
+     height: 50%;
+     width: 100%; 
+     overflow: hidden;
+}
+
+span{
+    color: red;
+}
+p{
+    text-align: center;
+}
+h3{
+    margin: 0;
 }
