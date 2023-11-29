@@ -6,16 +6,16 @@ html,body {
     margin: 0;
     padding: 0;
     font-family: 'Barlow Condensed', sans-serif;
-    /* position: relative; */
+    scroll-behavior: smooth;
 }
 
-* {
+*{
     box-sizing: border-box;
 }
 
 nav{
     width: 100%;
-    height: 8%;
+    height: 60px;
     background-color: #212529;
     display: flex;
     align-items: center;
@@ -58,12 +58,11 @@ a:hover {
     padding-top: 6%;
     padding-bottom:7px ;
     height: 100%;
-    /* background-image: url(pexels-johannes-plenio-1103970.jpg); */
     background-color: rgb(233, 233, 233);
     background-size: cover;
     display: flex;
     align-items: center;
-   /* margin-bottom: 8%; */
+
 
 }
 
@@ -92,12 +91,15 @@ a:hover {
     border-radius: 10% 25%;
 }
 
-/* ______________________________________________________________ */
 
 .services_container{
     width: 100%;
     height: 900px;
-    /* padding-top: 50px; */
+}
+.margin_div{
+    width: 100%;
+    height: 60px;
+    background-color: rgb(233, 233, 233);
 }
 
 .services_head{
@@ -178,11 +180,6 @@ p{
 h3{
     margin: 0;
 }
-
-/* _________________________________________________________________________ */
-
-
-
 .project_head{
     font-size: 50px;
     font-weight: bold;
@@ -226,4 +223,91 @@ h3{
 .project_card_pera{
     color: rgb(231, 231, 231);
     font-size: 23px;
+}
+
+.contact_head{
+    color: rgb(1, 1, 1);
+    font-size: 50px;
+    font-weight: bold   ;
+    text-align: center;
+    background-color: rgb(233, 233, 233);
+}
+.contact_body{
+    background-color: rgb(233, 233, 233);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+table{
+    width: 85%;
+    height: 300px;
+    font-size: 20px;
+    font-weight: bold;
+    border-spacing: 15px;
+}
+
+td{
+    width: 50%;
+}
+
+input{
+    width: 100%;
+    height: 38px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+
+    
+}
+textarea{
+    width: 100%;
+    height: 150px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+}
+button{
+    width:70%;
+    height: 30px;
+    font-size: 15px;
+    background-color: #99a3b0;
+    color: white    ;
+    border: none;
+}
+
+input:focus{
+    border: lightskyblue 4px solid;
+    outline: none;
+}
+textarea:focus{
+    border: lightskyblue 4px solid;
+    outline: none;
+}
+footer{
+    width: 100%;
+    height: 100px;
+    background-color: #99a3b0;
+    margin-top: 20px;
+    text-align: center;
+    box-sizing: border-box;
+    line-height: 0;
+    padding-top: 10px;
+    
+}
+
+.footer_icon{
+    width: 25px;
+}
+
+.footer_text{
+    font-size: 20px;
+}
+
+section{
+    transition: 0.2;
+}
+
+button:hover{
+    background-color: #5a6169 ;
 }
